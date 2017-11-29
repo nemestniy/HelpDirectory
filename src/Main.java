@@ -6,11 +6,11 @@ public class Main {
         for (;;) {
             help.greeting();
             do {
-                number = (char) System.in.read();
+                number = (char) System.in.read();   //there we read character
                 do {
-                    ignore = (char) System.in.read();
+                    ignore = (char) System.in.read();   //there we check extra characters
                 } while (ignore != '\n');
-            } while(!help.isValid(number));
+            } while(!help.isValid(number));     //there we check for correctness of character
 
             if(number == '6') break;
 
